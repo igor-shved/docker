@@ -24,7 +24,7 @@ services:
   php_fpm:
     restart: unless-stopped
     ports:
-      - "9000:9000"
+      - "5000:9000"
       - "8080:8080"
     build:
       context: ./
