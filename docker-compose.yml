@@ -55,8 +55,6 @@ services:
     volumes:
       - ./mysql/db:/var/lib/mysql
       - ./mysql/log:/var/log/mysql
-    env_file:
-      - env/mysql.env
     environment:
       MYSQL_USER: ${APP_USER}
       #MYSQL_ROOT_PASSWORD: root

@@ -96,9 +96,6 @@ FROM php:$PHP_VER
 	RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&\
 	apt-get install -y nodejs
 
-# Install vue/cli in container
-	RUN npm install -g @vue/cli
-
 # php.ini
 #    ADD ./php-fpm/php.ini /usr/local/etc/php/conf.d/
 
