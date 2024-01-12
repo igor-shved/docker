@@ -53,11 +53,11 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./mysql/db:/var/lib/mysql
-      - ./mysql/log:/var/log/mysql
+      - ../mysql/db:/var/lib/mysql
+      - ../mysql/log:/var/log/mysql
     environment:
       MYSQL_USER: ${APP_USER}
-      #MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_PASSWORD: 12345
     networks:
       - app_net
