@@ -58,7 +58,7 @@ services:
     environment:
       MYSQL_USER: ${APP_USER}
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_PASSWORD: 12345
+      MYSQL_PASSWORD: qQ654321
     networks:
       - app_net
     container_name: app_mysql
@@ -73,7 +73,7 @@ services:
       PMA_HOST: mysql
       MYSQL_USER: ${APP_USER}
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_PASSWORD: 12345
+      MYSQL_PASSWORD: qQ654321
       UPLOAD_LIMIT: 10000M
     networks:
       - app_net
