@@ -69,6 +69,8 @@ FROM php:$PHP_VER
     RUN pecl install redis \
     && docker-php-ext-enable redis
 
+	RUN docker-php-ext-install sockets
+
 #Install xdebug
 #    RUN pecl install xdebug \
 #    && docker-php-ext-enable xdebug
